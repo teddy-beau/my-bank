@@ -57,6 +57,9 @@ main {
          span {
             font-family: "Roboto Mono", monospace;
          }
+         span::after {
+            content: " €";
+         }
       }
       .operation-list {
          margin: 0 25px;
@@ -78,6 +81,9 @@ main {
                padding: 0 10px;
                font-family: "Roboto Mono", monospace;
                font-weight: 300;
+            }
+            div:nth-child(3)::after {
+               content: " €";
             }
          }
          > div:nth-child(odd) {
